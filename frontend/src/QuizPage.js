@@ -54,7 +54,7 @@ const QuizPage = () => {
         justifyContent: "center",
         alignItems: "center",
         minHeight: "100vh",
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#252F3E",
         padding: "30px",
       }}
     >
