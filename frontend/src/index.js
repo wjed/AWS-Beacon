@@ -3,11 +3,47 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider, CssBaseline, createTheme } from '@mui/material';
+
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#252F3E',
+      paper: '#35445D',
+    },
+    text: {
+      primary: '#FFFFFF',
+      secondary: '#EAEDED',
+    },
+    primary: { main: '#0073BB' },
+    secondary: { main: '#FF9900' },
+  },
+  typography: {
+    fontFamily: '"Open Sans", "Helvetica Neue", Arial, sans-serif',
+    button: {
+      fontWeight: 'bold',
+      textTransform: 'none',
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 8,
+        },
+      },
+    },
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
