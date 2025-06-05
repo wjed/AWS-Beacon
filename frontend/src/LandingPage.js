@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Paper, Typography, Button } from "@mui/material";
 
-const awsLogo = process.env.PUBLIC_URL + "/aws-logo.svg";
+const awsLogo = process.env.PUBLIC_URL + "/aws-logo.png";
 
 const LandingPage = ({ onSelect }) => {
   return (

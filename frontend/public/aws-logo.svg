@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120">
-  <text x="0" y="80" font-family="Arial, Helvetica, sans-serif" font-size="60" fill="#232F3E" font-weight="bold">aws</text>
-  <path d="M20 90c30 15 60 25 100 25s70-10 100-25" fill="none" stroke="#FF9900" stroke-width="6"/>
-  <polyline points="180,95 205,95 195,80" fill="none" stroke="#FF9900" stroke-width="6"/>
-</svg>
