@@ -143,7 +143,7 @@ const ChatApp = (props) => {
         alignItems: "center",
         minHeight: "100vh",
         padding: "30px",
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#F3F3F3",
       }}
     >
       <Paper
@@ -188,6 +188,7 @@ const ChatApp = (props) => {
               disabled={history.length === 0}
               startIcon={<DeleteIcon />}
               onClick={onClearHistory}
+              color="secondary"
             >
               Clear History
             </Button>
@@ -223,7 +224,7 @@ const ChatApp = (props) => {
           <IconButton
             disabled={spinner || !baseUrl}
             onClick={handleSendQuestion}
-            color="primary"
+            color="secondary"
           >
             <SendIcon />
           </IconButton>

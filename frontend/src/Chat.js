@@ -23,7 +23,7 @@ const Chat = (props) => {
     <Box
       ref={boxRef}
       sx={{
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#F3F3F3",
         paddingBottom: "20px",
         overflowY: "auto",
         maxHeight: "650px",
