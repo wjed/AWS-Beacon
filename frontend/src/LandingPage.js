@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Paper, Typography, Button } from "@mui/material";
 
+const awsLogo = process.env.PUBLIC_URL + "/aws-logo.svg";
+
 const LandingPage = ({ onSelect }) => {
   return (
     <Box
@@ -9,11 +11,12 @@ const LandingPage = ({ onSelect }) => {
         justifyContent: "center",
         alignItems: "center",
         minHeight: "100vh",
-        backgroundColor: "#252F3E",
+        background: "linear-gradient(135deg, #252F3E 0%, #1A202C 100%)",
         padding: "30px",
       }}
     >
-      <Paper sx={{ padding: 8, maxWidth: 600, textAlign: "center" }}>
+      <Paper className="fade-in" sx={{ padding: 8, maxWidth: 600, textAlign: "center", boxShadow: 3 }}>
+        <img src={awsLogo} alt="AWS Logo" style={{ width: "120px", marginBottom: "20px" }} />
         <Typography variant="h5" gutterBottom>
           Welcome to AWS Beacon
         </Typography>
@@ -24,6 +27,9 @@ const LandingPage = ({ onSelect }) => {
           <Button variant="contained" color="secondary" onClick={() => onSelect("chat")}>Chat</Button>
           <Button variant="contained" color="secondary" onClick={() => onSelect("quiz")}>Quiz</Button>
         </Box>
+        <Typography variant="subtitle2" sx={{ marginTop: 2 }}>
+          "Work hard, have fun, make history."
+        </Typography>
       </Paper>
     </Box>
   );
