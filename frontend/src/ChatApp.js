@@ -143,17 +143,19 @@ const ChatApp = (props) => {
         alignItems: "center",
         minHeight: "100vh",
         padding: "30px",
-        backgroundColor: "#252F3E",
+        background: "linear-gradient(135deg, #252F3E 0%, #1A202C 100%)",
       }}
     >
       <Paper
+        className="fade-in"
         sx={{
           padding: 8,
           maxWidth: 600,
+          boxShadow: 3,
         }}
       >
         <Typography variant="h5" sx={{ textAlign: "center" }}>
-          AWS Q&A
+          AWS Beacon
         </Typography>
         <br></br>
         <br></br>
